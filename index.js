@@ -112,7 +112,7 @@ const films = [
 ];
 
 //----------
-function conArrToObj(objectArray) {
+function convertArrayToObject(objectArray) {
     return objectArray.reduce((res, item) => {
         const key = item['category'];
         const value = [item['title'], item['year']];
@@ -124,7 +124,7 @@ function conArrToObj(objectArray) {
     }, {});
 }
 
-const objFilms = conArrToObj(films);
+const objFilms = convertArrayToObject(films);
 //console.log(objFilms);
 
 //----------
